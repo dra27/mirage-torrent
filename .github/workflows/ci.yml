@@ -33,7 +33,7 @@ jobs:
 
       - run: opam repo add --all show-env git+https://github.com/dra27/opam-repository.git#show-env
 
-      - run: opam switch create --repos=show-env show-env show-env
+      - run: opam switch create --repos=show-env show-env show-env -v
 
       - run: ls C:/mingw64/bin
 
