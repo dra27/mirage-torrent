@@ -29,6 +29,8 @@ jobs:
           opam-repositories: |
             default: https://github.com/dra27/opam-repository.git#windows-initial
 
+      - run: env
+
       - run: opam install . --deps-only --with-test
 
       - run: opam exec -- dune build
