@@ -39,6 +39,8 @@ jobs:
 
       - run: opam exec -- ocamlopt -config
 
+      - run: opam pin add dune git+https://github.com/dra27/dune.git#debug
+
       - run: opam install . --deps-only --with-test
 
       - run: opam exec -- dune build
